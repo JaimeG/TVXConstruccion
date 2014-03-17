@@ -1,0 +1,516 @@
+/* ==========================================================================
+   Author's custom styles
+   ========================================================================== */
+
+body {
+    padding-top: 75px;
+    padding-bottom: 100px;
+    font-family: 'Ruda', sans-serif;
+    background-image: url('../img/fondo.jpg');
+}
+
+#logoHeader {
+	margin-right: 25px;
+	margin-top: 2px;
+}
+
+#RigthHeader {
+	margin-top: 14px;
+	margin-right: 15px;
+}
+
+#leftHeader {
+	margin-top: 25px;
+	margin-left: 15px;
+}
+
+#topBanner {
+	min-width: 300px;
+	max-height: 250px;
+	min-height: 75px;
+	margin: 25px 0;
+	background-color: #ccc;
+}
+
+#separador {
+	width: 5px;
+	height: 26px;
+	background-color: #fff;
+	margin: 0 15px;
+	zoom: 0.8;
+}
+
+#TuVotax {
+	margin-top: 4px;
+}
+
+.headerFb {
+	width: 24px;
+	zoom: 0.8;
+	height: 24px;
+	background-image: url("../img/social.png");
+	background-position: 0 0;
+	margin: 0 7px !important;
+}
+
+.headerTw {
+	width: 34px;
+	zoom: 0.8;
+	height: 28px;
+	background-image: url("../img/social.png");
+	background-position: -38px 0;
+	margin: 0 7px !important;
+}
+
+.headerIg {
+	width: 23px;
+	zoom: 0.8;
+	height: 24px;
+	background-image: url("../img/social.png");
+	background-position: -82px 0;
+	margin: 0 7px !important;
+}
+
+.headerYt {
+	width: 37px;
+	zoom: 0.8;
+	height: 27px;
+	background-image: url("../img/social.png");
+	background-position: -118px 0;
+	margin: 0 7px !important;
+}
+©1
+.headerPr {
+	width: 25px;
+	zoom: 0.8;
+	height: 29px;
+	background-image: url("../img/social.png");
+	background-position: 25px 0;
+	margin: 0 7px !important;
+}
+
+.navbar-inverse .navbar-brand, .navbar-inverse .navbar-nav > li > a {
+	margin: 0;
+	padding: 0;
+}
+
+.container-fluid {
+	margin: 0 10%;
+}
+
+
+#headerBg, #footerBg {
+	background: #001925; /* Old browsers */
+	height: 75px;
+	z-index: 10002;
+}
+
+/*Twitter Footer*/
+
+#footerTws {
+	color: #fff;
+	font-size: 18px;
+	margin-top: 15px;
+}
+
+#tw-destacados {
+	font-size: 12px;
+	margin-top: 7px;
+	width: 75%;
+	padding-right: 25px;
+	float: left;
+	color: #fff;
+	box-sizing:border-box;
+	-moz-box-sizing:border-box; /* Firefox */
+	overflow: hidden;
+}
+
+#tw-destacados p {
+	font-size: 12px;
+	height: 50px;
+	margin-top: 0px;
+}
+
+#tw-titulo {
+	float: left;
+	padding-top: 15px;
+	width: 25%;
+	line-height: 1;
+	font-size: 12px;
+}
+
+#tw-titulo img {
+	margin-left: 6px;
+	margin-bottom: 3px;
+}
+
+.prog-col {
+	width: 33%;
+	float: left;
+	color: #fff;
+	margin: 0 !important;
+	padding: 10px;
+	box-sizing:border-box;
+	-moz-box-sizing:border-box; /* Firefox */
+}
+
+#prog-despues {
+	float: left;
+	width: 17%;
+	color: #fff;
+	padding: 20px 0 0;
+	font-size: 12px;
+	line-height: 1;
+	box-sizing: border-box;
+	-moz-box-sizing: border-box;
+}
+
+#prog-titulo {
+	width: 14%;
+	float: left;
+	color: #fff;
+	padding: 20px 0 0;
+	font-size: 12px;
+	line-height: 1;
+	box-sizing:border-box;
+	-moz-box-sizing:border-box; /* Firefox */
+}
+
+.prog-col h1 {
+	font-size: 12px;
+	margin:0;gg
+	padding: 0;
+	color: #fff;
+}
+
+.prog-col p {
+	font-size: 11px;
+}
+
+#prog-slide {
+	margin-top: 10px;
+}
+
+.fb-comments {
+	width: 100%;
+	height: 477px;
+	overflow: hidden;
+	overflow-y: auto;
+	background-color: #fff;
+	-webkit-box-shadow: 0 1px 2px rgba(0,0,0,0.5);
+	-moz-box-shadow: 0 1px 2px rgba(0,0,0,0.5);
+	box-shadow: 0 1px 2px rgba(0,0,0,0.5);
+	max-height: 500px;
+}
+
+#twitter-feed {
+    margin:auto;
+    font-family: Arial, Helvetica, sans-serif;
+    padding:8px 10px 5px 10px;
+    /*border-radius:12px;*/
+    background-color: #001925;
+    color:#333;
+    overflow:auto;
+	min-height: 422px;
+    -webkit-box-shadow: 0 1px 2px rgba(0,0,0,0.5);
+	-moz-box-shadow: 0 1px 2px rgba(0,0,0,0.5);
+	box-shadow: 0 1px 2px rgba(0,0,0,0.5);
+}
+ 
+#twitter-feed h1 {
+    color:#f7ed49;
+    margin:0px;
+    padding:9px 0px 9px 0px;
+    font-size:28px;
+    font-weight:lighter;    
+}
+ 
+.twitter-article, #loading-container {
+    width:100%;
+    border-top:1px dotted #CCC;
+    float:left; 
+    padding:8px 0px 8px 0px;
+	position:relative;
+} 
+.twitter-pic {
+    position:absolute;
+}
+ 
+.twitter-pic img {
+    float:left;
+    border-radius:7px;  
+    border:none;
+     
+}
+
+.scroll_content {
+	max-height: 395px;
+	padding-right: 10px;
+}
+ 
+/* -------- TEXT STYLING ------*/
+.twitter-text {
+    width:100%;
+    float:left;
+    font-size:11px;
+    padding-left:52px;
+	-moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+}
+.twitter-text p {
+    margin:0px;
+    line-height:15px;   
+}
+.twitter-text a,  h1 a {
+    color: #00acee;
+    text-decoration: none;
+}
+.twitter-text a:hover,  h1 a:hover {
+    text-decoration: underline;
+    color: #00acee;
+}
+ 
+.tweet-time {
+    font-size:10px;
+    color:#878787;
+    float:right;
+}
+.tweet-time a, .tweet-time a:hover {
+    color:#878787;
+}
+ 
+.tweetprofilelink a {
+    color:#444;
+}
+.tweetprofilelink a:hover {
+    color:#444;
+}
+ 
+/* -------- FEED  ACTIONS ------*/
+#twitter-actions {
+    width:75px;
+    float:right;
+    margin-right:5px;   
+    margin-top:3px;
+        display:none;
+}
+.intent {
+    width:25px;
+    height:16px;
+    float:left; 
+}
+.intent a{
+    width:25px;
+    height:16px;
+    display:block;
+    background-image:url("../img/tweet-actions.png");
+    float:left; 
+} 
+.intent a:hover{
+    background-position:-25px 0px;
+} 
+ 
+#intent-retweet a{
+    background-position:0px -17px;
+} 
+#intent-retweet a:hover{
+    background-position:-25px -17px;
+} 
+#intent-fave a{
+    background-position:0px -36px;
+} 
+#intent-fave a:hover{
+    background-position:-25px -36px;
+} 
+ 
+/* -------- RETWEET INDICATOR ------*/
+#retweet-indicator {
+    width:14px;
+    height:10px;
+    background-image:url("../img/tweet-actions.png");
+    background-position:-5px -54px;
+    margin-top:3px;
+    float:left;
+}
+
+.backlink {
+	font-size:11px;
+	text-align:center;
+}
+
+.backlink a {
+	color:#aaa;
+}
+
+#feedback_0kUp9zCA7kEx1mtES iframe[style] {
+	width: 100% !important;
+}
+
+.twitter-timeline {
+ width: 350px;
+}
+
+.shadow {
+	-webkit-box-shadow: 0 1px 2px rgba(0,0,0,0.5);
+	-moz-box-shadow: 0 1px 2px rgba(0,0,0,0.5);
+	box-shadow: 0 1px 2px rgba(0,0,0,0.5);
+}
+
+.contenido {
+	-webkit-box-shadow: 0 1px 2px rgba(0,0,0,0.5);
+	-moz-box-shadow: 0 1px 2px rgba(0,0,0,0.5);
+	box-shadow: 0 1px 2px rgba(0,0,0,0.5);
+	background-color: #001925;
+	padding: 10px;
+	max-height: 872px;
+}
+
+.contenido h1 {
+	margin: 0 0 10px;
+	padding: 0;
+}
+
+.spacer {
+	margin: 10px 0;
+}
+
+/*Slider Style*/
+
+#gifSlider, .pub-tvx-programas {
+	padding: 0;
+}
+
+.prog-actual {
+	/*background-color: rgba(255, 255, 255, 0.11);
+	height: 60px;*/
+}
+
+.float-left {
+	float: left;
+	margin-top: 25px;
+}
+
+.float-right {
+	float: right;
+	margin-top: 15px;
+}
+
+.float-leftimg {
+	float: left;
+}
+
+#youtube-feed ul {
+	margin: 5px -5px 0px 5px;
+	overflow: hidden;
+	padding: 0;
+}
+
+@media (min-width: 1000px) {
+	#youtube-feed li {
+		width: 16.66667%;
+	}
+}
+
+@media (min-width: 750px) {
+	#youtube-feed li {
+		width: 25%;
+	}
+}
+
+#youtube-feed li {
+	display: inline-table;
+	padding-right: 3px;
+	width: 33%;
+}
+
+#youtube-feed li .yt-title-link {
+	display: block;
+	font-size: 13px;
+	margin: 5px auto 12px;
+	text-align: left;
+}
+
+#youtube-feed li {
+	list-style-type: none;
+}
+
+#youtube-feed li img {
+	display: block;
+	margin: auto;
+	/*max-width: 184px;*/
+	width: 100%;
+}
+
+#youtube-feed {
+	background-color: #001925;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+	overflow: hidden;
+}
+
+.centerImg {
+	display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 100%;
+}
+
+.instagram {
+	background-color: #001925;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+	overflow: hidden;
+	max-height: 810px;
+}
+
+.instagram img {
+	width: 100%;
+	max-width: 192px;
+	display: block;
+	margin: 5px auto;
+}
+
+#videoPlayer {
+	max-width: 1200px;
+	margin: 25px auto 0;
+}
+
+.imgHeader {
+	margin-right: 7px;
+}
+
+#container_wrapper {
+	position: relative;
+	padding-bottom: 56.25%;
+	/*padding-top: -30px;*/
+	height: 0 !important;
+	overflow: hidden;
+}
+
+#container_wrapper iframe,  
+#container_wrapper object,  
+#container_wrapper embed {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+}
+
+#player {
+	margin-top: 10px;
+}
+
+.instagram img {
+	max-width: 168px !important;
+}
+
+#tvframe {
+	font-size: 14px;
+	text-align: center;
+	color: #f7ed49;
+	background: #3e3e3e;
+	height: 35px;
+	padding: 8px 0 0;
+}
