@@ -1,3 +1,4 @@
+<? include('geo/checkgeo.class.php');?>
 <!DOCTYPE html>
 <!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
 <!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
@@ -38,7 +39,7 @@
     <div class="navbar navbar-inverse navbar-fixed-top" id="headerBg">
       <div class="container-fluid">
 
-            <ul id="leftHeader" class="nav navbar-nav navbar-left">
+            <ul id="leftHeader" class="nav navbar-nav navbar-left hidden-xs">
                 <li><a href="#" id="logoHeader"> <img src="img/tvx-logo.png" alt=""></a></li>
                 <li><a href="https://www.facebook.com/canalTVX" target="_blank" class="headerFb"></a></li>
                 <li><a href="https://twitter.com/canalTVX" target="_blank" class="headerTw"></a></li>
@@ -46,28 +47,40 @@
                 <li><a href="http://www.youtube.com/user/CanalTVX" target="_blank" class="headerYt"></a></li>
                 <li><a href="http://www.pinterest.com/canaltvx/" class="headerPr"></a></li>
                 <li><div class="hidden-xs" id="separador"></div></li>
-                <li class="" id='tvframe'> <b>CANAL 23</b> SEÑAL ABIERTA - <b>CLARO TV</b> / <b>CANAL 28</b> TIGO DIGITAL / <b>CANAL 25</b> ZONA ORIENTAL</li>
+                <li></li>
             </ul>
+            
+            <div class='visible-xs' id="headerPhone">
+              <div class="float-left">
+                  <img src="img/tvx-logo.png" class="float-leftimg" alt="">
+                  <div id="separador" class="float-leftimg"></div>
+              </div>
+
+            </div> 
 
       </div>
-      <div class="clearfix"></div>
     </div>
     <!-- /header -->
 
     <div class="container-fluid">
       <div class="row-fluid">
 
-          <div class="col-sm-12 col-lg-8 col-lg-offset-2">
-            
-            <div id="player" class="hidden-xs hidden-sm hidden-md">
-              <div id="container"></div>
-            </div>
-
-            <div id="stream-mobile">
-              <a href="http://panel.elsalvadordigital.com:1935/canal23/canal23/playlist.m3u8" target="_blank">
-                <img src="img/1.jpg" class="img-responsive centerImg hidden-lg " alt="">
-              </a>
-            </div>
+          <div class="col-sm-12 col-lg-8 col-sm-offset-2 col-lg-offset-2">
+            <? if(checkGeo::check()){ ?>
+              <div id="player" class="hidden-xs hidden-sm hidden-md">
+                <div id="container"></div>
+              </div>
+    
+              <div id="stream-mobile">
+                <a href="http://panel.elsalvadordigital.com:1935/canal23/canal23/playlist.m3u8" target="_blank">
+                  <img src="img/1.jpg" class="img-responsive centerImg hidden-lg " alt="">
+                </a>
+              </div>
+            <? }else{?>
+          
+          <div class="col-sm-12 col-lg-12" id='tvframe'>
+            <b>CANAL 23</b> SEÑAL ABIERTA - <b>CLARO TV</b> / <b>CANAL 28</b> TIGO DIGITAL / <b>CANAL 25</b> ZONA ORIENTAL
+          </div>
 
           </div>
 
@@ -87,11 +100,11 @@
     <div class="container-fluid">
       <div class="row-fluid">
         
-        <div class="col-sm-6 col-lg-5">
+        <div class="col-sm-4 col-lg-5">
             <div id="twitter-feed"></div>
         </div>
 
-        <div class="col-sm-6 col-lg-5">
+        <div class="col-sm-12 col-lg-5">
               <div id="fb-root"></div>
               <div id="fbContainer">
                 <div class="fb-comments" data-href="http://www.tvx.com.sv/" data-height="320" data-width="500px" data-numposts="5" data-colorscheme="light"></div>
@@ -101,7 +114,7 @@
         <div class="col-lg-2 hidden-sm hidden-xs hidden-md">
           <div class="col-sm-12">
             <ul class="pub-tvx-programas">
-             <!--  <li><a href="http://www.tvx.com.sv/twd/" target="_blank"><img class="img-responsive" src="img/publicidad/TWD-CONCURSO-BANNER.jpg" alt=""></a></li> -->
+              <li><a href="http://www.tvx.com.sv/twd/" target="_blank"><img class="img-responsive" src="img/publicidad/TWD-CONCURSO-BANNER.jpg" alt=""></a></li>
               <li><a href="https://www.facebook.com/extravagando.tvx?fref=ts" target="_blank"><img class="img-responsive" src="img/publicidad/EV.jpg" alt=""></a></li>
               <li><a href="https://www.facebook.com/extravagando.tvx?fref=ts" target="_blank"><img class="img-responsive" src="img/publicidad/EV.jpg" alt=""></a></li>
               <li><a href="http://instagram.com/Canaltvx" target="_blank"><img class="img-responsive" src="img/publicidad/Instagram.jpg" alt=""></a></li>

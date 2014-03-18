@@ -17,7 +17,6 @@
 	do{
 		if($counter % 15 == 0){		
 			// $tweets_recent = $connection->get("https://api.twitter.com/1.1/search/tweets.json?q=%23expresatvx&count=30&result_type=recent");
-			// $tweets_recent = $connection->get("https://api.twitter.com/1.1/statuses/user_timeline.json?count=80&screen_name=expresatvx");
 			$tweets_recent = $connection->get("https://api.twitter.com/1.1/statuses/user_timeline.json?count=80&screen_name=canaltvx");
 			
 			//Check twitter response for errors.
@@ -38,7 +37,7 @@
 
 			//$tweets_popular = $connection->get("https://api.twitter.com/1.1/search/tweets.json?q=%23tuvotastvx&count=500&result_type=popular");
 			// $tweets_popular = $connection->get("https://api.twitter.com/1.1/statuses/user_timeline.json?count=80&screen_name=expresatvx");
-			$tweets_popular = $connection->get("ttps://api.twitter.com/1.1/search/tweets.json?q=%23canaltvx&count=500&result_type=popular");
+			$tweets_popular = $connection->get("https://api.twitter.com/1.1/statuses/user_timeline.json?count=80&screen_name=canaltvx");
 			//Check twitter response for errors.
 			if ( isset( $tweets->errors[0]->code )) {
 			    // If errors exist, print the first error for a simple notification.

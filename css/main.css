@@ -251,6 +251,7 @@ body {
 /* -------- TEXT STYLING ------*/
 .twitter-text {
     width:100%;
+    color:#fff;
     float:left;
     font-size:11px;
     padding-left:52px;
@@ -263,7 +264,7 @@ body {
     line-height:15px;   
 }
 .twitter-text a,  h1 a {
-    color: #00acee;
+    color: #eddf00;
     text-decoration: none;
 }
 .twitter-text a:hover,  h1 a:hover {
@@ -273,18 +274,18 @@ body {
  
 .tweet-time {
     font-size:10px;
-    color:#878787;
+    color:#f7ed49;
     float:right;
 }
 .tweet-time a, .tweet-time a:hover {
-    color:#878787;
+    color:#00acee;
 }
  
 .tweetprofilelink a {
-    color:#444;
+    color:#f7ed49;
 }
 .tweetprofilelink a:hover {
-    color:#444;
+    color:#00acee;
 }
  
 /* -------- FEED  ACTIONS ------*/
@@ -510,7 +511,4 @@ body {
 	font-size: 14px;
 	text-align: center;
 	color: #f7ed49;
-	background: #3e3e3e;
-	height: 35px;
-	padding: 8px 0 0;
 }

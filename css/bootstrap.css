@@ -303,8 +303,8 @@ body {
   font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
   font-size: 14px;
   line-height: 1.428571429;
-  color: #333333;
-  background-color: #08CBFF;
+  color: #001925;
+  background-color: #001925;
 }
 
 input,
@@ -488,6 +488,7 @@ h2,
 h3 {
   margin-top: 20px;
   margin-bottom: 10px;
+  font-weight: 100;
 }
 
 h4,
@@ -499,7 +500,7 @@ h6 {
 
 h1,
 .h1 {
-  font-size: 24px;
+  font-size: 20px;
 }
 
 h2,
@@ -1587,6 +1588,10 @@ table th[class*="col-"] {
     height: 110px !important;
   }
 
+  #tvframe {
+    margin-top: 16px !important;
+  }
+
   .float-left {
     float: none !important;
     width: 200px;
@@ -1610,6 +1615,10 @@ table th[class*="col-"] {
 }
 
 @media (max-width: 768px) {
+
+  #tvframe {
+    font-size: 13px !important;
+  }
 
     .contenido {
          margin: 10px 0;
@@ -3864,6 +3873,7 @@ textarea.input-group-sm > .input-group-btn > .btn {
 .nav > li {
   position: relative;
   display: block;
+  float: left;
 }
 
 .nav > li > a {
@@ -6522,7 +6532,7 @@ td.visible-sm {
   }
 
   #tvframe {
-    height: 50px !important;
+    margin-top: 15px;
     font-size: 13px !important;
   }
 
