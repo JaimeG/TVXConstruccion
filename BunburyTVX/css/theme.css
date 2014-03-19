@@ -14,6 +14,12 @@
 html{
 	background-image:none;	background-color:#FFFFFF;
 }
+body {
+	background-image: url(../img/background.jpg);
+	background-position: center center;
+	
+	
+}
 #logo{
 	background-image:none;	background-color:#DEDEDE;
 }
