@@ -50,7 +50,8 @@ TVX - Concurso Enrique Bunbury
         $ret_obj = $facebook->api('/me/feed', 'POST',
                                     array(
                                       'link' => 'www.tvx.com.sv',
-                                      'message' => '1 2 3 probando'
+                                      'message' => '1 2 3 probando',
+                                      'picture' => 'http://tvx.com.sv/bunbury/images/logobunbury.png'
                                  ));
         ?>
 
@@ -305,7 +306,15 @@ TVX - Concurso Enrique Bunbury
         $login_url = $facebook->getLoginUrl( array(
                        'scope' => 'publish_stream'
                        )); 
-        echo 'Please <a href="' . $login_url . '">login.</a>';
+        ?>
+        		<div>
+        			Aqui podes personalizar la cuestion del login
+        			<br>
+        			<img src="http://i0.kym-cdn.com/photos/images/newsfeed/000/581/296/c09.jpg" alt="">
+        			<br>
+        			<a href="<?php echo $login_url ?>">entra</a>
+        		</div>
+        <?php
         error_log($e->getType());
         error_log($e->getMessage());
       }   
@@ -316,7 +325,16 @@ TVX - Concurso Enrique Bunbury
       // We'll use the current URL as the redirect_uri, so we don't
       // need to specify it here.
       $login_url = $facebook->getLoginUrl( array( 'scope' => 'publish_stream' ) );
-      echo 'Please <a href="' . $login_url . '">login.</a>';
+      ?>
+     		<div>
+     			Aqui podes personalizar la cuestion del login
+     			<br>
+     			<img src="http://i0.kym-cdn.com/photos/images/newsfeed/000/581/296/c09.jpg" alt="">
+     			<br>
+     			<a href="<?php echo $login_url ?>">entra</a>
+     		</div>
+      <?php
+
 
     } 
 
